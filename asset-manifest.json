@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Dwarakaasd/Movies_info/static/css/main.073c9b0a.css",
+    "main.js": "/Dwarakaasd/Movies_info/static/js/main.331d7f79.js",
+    "static/js/787.c495ec7b.chunk.js": "/Dwarakaasd/Movies_info/static/js/787.c495ec7b.chunk.js",
+    "static/media/Eclipse-1s-200px (1).gif": "/Dwarakaasd/Movies_info/static/media/Eclipse-1s-200px (1).40276b28b295d465a7a2.gif",
+    "index.html": "/Dwarakaasd/Movies_info/index.html",
+    "main.073c9b0a.css.map": "/Dwarakaasd/Movies_info/static/css/main.073c9b0a.css.map",
+    "main.331d7f79.js.map": "/Dwarakaasd/Movies_info/static/js/main.331d7f79.js.map",
+    "787.c495ec7b.chunk.js.map": "/Dwarakaasd/Movies_info/static/js/787.c495ec7b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.331d7f79.js"
+  ]
+}
