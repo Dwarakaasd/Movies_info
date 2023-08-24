@@ -1,25 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.css";
+import React, { useState } from "react";
+import Navbar from "./components/Navbar";
+import MoviesSection from "./components/MoviesSection";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LoadingBar from "react-top-loading-bar";
+const App = () => {
+  const [progress, setProgress] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <LoadingBar color="#ff004f" progress={progress} />
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <MoviesSection
+                setProgress={setProgress}
+                key="top_rated"
+                categories="top_rated"
+              />
+            }
+          />
+          <Route
+            exact
+            path="/top_rated"
+            element={
+              <MoviesSection
+                setProgress={setProgress}
+                key="top_rated"
+                categories="top_rated"
+              />
+            }
+          />
+          <Route
+            exact
+            path="popular"
+            element={
+              <MoviesSection
+                setProgress={setProgress}
+                key="popular"
+                categories="popular"
+              />
+            }
+          />
+          <Route
+            exact
+            path="upcoming"
+            element={
+              <MoviesSection
+                setProgress={setProgress}
+                key="upcoming"
+                categories="upcoming"
+              />
+            }
+          />
+        </Routes>
+      </div>
+    </Router>
   );
-}
-
+};
 export default App;
